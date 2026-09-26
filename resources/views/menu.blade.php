@@ -126,8 +126,8 @@
             <div class="menu-item sides shimmer-card hover-lift bg-white dark:bg-[#121212] p-3.5 rounded-2xl border border-gray-200 dark:border-gray-800/80 transition duration-300 flex flex-col justify-between group shadow-sm" data-aos="fade-up" data-aos-delay="300">
                 <div>
                     <div class="relative overflow-hidden rounded-xl mb-3">
-                        <img class="w-full h-32 object-contain p-2 group-hover:scale-110 transition duration-500" src="{{ asset('assets/crispy-french-fries.svg') }}" alt="Crispy French Fries">
-                        <button onclick="openQuickView('Crispy French Fries', '$2.49', 'Golden salted crispy french fries served with garlic mayo sauce.', '{{ asset('assets/crispy-french-fries.svg') }}', 2.49, 'SIDES')" class="absolute top-2 right-2 bg-black/60 hover:bg-brandOrange hover:text-black text-white w-7 h-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-md"><i class="fa-solid fa-eye text-xs"></i></button>
+                        <img class="w-full h-32 object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=400&q=80" alt="Crispy French Fries">
+                        <button onclick="openQuickView('Crispy French Fries', '$2.49', 'Golden salted crispy french fries served with garlic mayo sauce.', 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=400&q=80', 2.49, 'SIDES')" class="absolute top-2 right-2 bg-black/60 hover:bg-brandOrange hover:text-black text-white w-7 h-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-md"><i class="fa-solid fa-eye text-xs"></i></button>
                     </div>
                     <div class="text-[10px] text-brandOrange mb-1">★★★★☆ (4.6)</div>
                     <h3 class="font-bold text-xs text-gray-900 dark:text-white group-hover:text-brandOrange transition item-name">Crispy French Fries</h3>

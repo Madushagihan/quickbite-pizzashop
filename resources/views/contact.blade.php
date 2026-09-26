@@ -18,6 +18,14 @@
             
             <!-- Left Info Cards -->
             <div class="space-y-4" data-aos="fade-right" data-aos-duration="900">
+                <!-- Restaurant Storefront Image Card -->
+                <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 h-44 relative group">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="QuickBite Restaurant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-3.5">
+                        <span class="text-white text-xs font-bold flex items-center gap-1.5"><i class="fa-solid fa-store text-brandOrange"></i> QuickBite Midtown NYC Store</span>
+                    </div>
+                </div>
+
                 <div class="hover-lift bg-white dark:bg-[#121212] p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm transition">
                     <div class="w-12 h-12 bg-brandOrange/20 text-brandOrange rounded-xl flex items-center justify-center text-xl mb-4 shadow-sm">
                         <i class="fa-solid fa-location-dot animate-bounce"></i>

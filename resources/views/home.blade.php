@@ -73,10 +73,13 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Offer 1 -->
-            <div class="shimmer-card hover-lift bg-gradient-to-br from-brandRed/10 via-white dark:via-[#121212] to-transparent p-6 rounded-3xl border border-brandRed/20 flex flex-col justify-between space-y-4 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+            <div class="shimmer-card hover-lift bg-gradient-to-br from-brandRed/10 via-white dark:via-[#121212] to-transparent p-5 rounded-3xl border border-brandRed/20 flex flex-col justify-between space-y-4 shadow-sm group" data-aos="fade-up" data-aos-delay="100">
                 <div>
-                    <span class="inline-block bg-brandRed text-white text-[10px] font-black px-3 py-1 rounded-full uppercase animate-wiggle shadow-sm">Save 30%</span>
-                    <h3 class="text-lg font-black text-gray-900 dark:text-white mt-3">Family Pizza Feast</h3>
+                    <div class="relative overflow-hidden rounded-2xl mb-4 h-48 shadow-md">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Family Pizza Feast" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <span class="absolute top-3 left-3 bg-brandRed text-white text-[10px] font-black px-3 py-1 rounded-full uppercase animate-wiggle shadow-lg">Save 30%</span>
+                    </div>
+                    <h3 class="text-lg font-black text-gray-900 dark:text-white group-hover:text-brandOrange transition">Family Pizza Feast</h3>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">2 Large Pepperoni Pizzas + 1 Garlic Bread + 1.5L Coke.</p>
                 </div>
                 <div class="flex justify-between items-center pt-3 border-t border-gray-200 dark:border-gray-800">
@@ -85,10 +88,13 @@
                 </div>
             </div>
             <!-- Offer 2 -->
-            <div class="shimmer-card hover-lift bg-gradient-to-br from-brandOrange/10 via-white dark:via-[#121212] to-transparent p-6 rounded-3xl border border-brandOrange/20 flex flex-col justify-between space-y-4 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+            <div class="shimmer-card hover-lift bg-gradient-to-br from-brandOrange/10 via-white dark:via-[#121212] to-transparent p-5 rounded-3xl border border-brandOrange/20 flex flex-col justify-between space-y-4 shadow-sm group" data-aos="fade-up" data-aos-delay="200">
                 <div>
-                    <span class="inline-block bg-brandOrange text-black text-[10px] font-black px-3 py-1 rounded-full uppercase animate-wiggle shadow-sm">Best Seller</span>
-                    <h3 class="text-lg font-black text-gray-900 dark:text-white mt-3">Burger Madness Box</h3>
+                    <div class="relative overflow-hidden rounded-2xl mb-4 h-48 shadow-md">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Burger Madness Box" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <span class="absolute top-3 left-3 bg-brandOrange text-black text-[10px] font-black px-3 py-1 rounded-full uppercase animate-wiggle shadow-lg">Best Seller</span>
+                    </div>
+                    <h3 class="text-lg font-black text-gray-900 dark:text-white group-hover:text-brandOrange transition">Burger Madness Box</h3>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">2 Double Cheeseburgers + Large Fries + 2 Cold Drinks.</p>
                 </div>
                 <div class="flex justify-between items-center pt-3 border-t border-gray-200 dark:border-gray-800">
@@ -97,10 +103,13 @@
                 </div>
             </div>
             <!-- Offer 3 -->
-            <div class="shimmer-card hover-lift bg-gradient-to-br from-yellow-500/10 via-white dark:via-[#121212] to-transparent p-6 rounded-3xl border border-yellow-500/20 flex flex-col justify-between space-y-4 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+            <div class="shimmer-card hover-lift bg-gradient-to-br from-yellow-500/10 via-white dark:via-[#121212] to-transparent p-5 rounded-3xl border border-yellow-500/20 flex flex-col justify-between space-y-4 shadow-sm group" data-aos="fade-up" data-aos-delay="300">
                 <div>
-                    <span class="inline-block bg-yellow-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase animate-wiggle shadow-sm">Weekend Special</span>
-                    <h3 class="text-lg font-black text-gray-900 dark:text-white mt-3">Crispy Chicken Bucket</h3>
+                    <div class="relative overflow-hidden rounded-2xl mb-4 h-48 shadow-md">
+                        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80" alt="Crispy Chicken Bucket" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <span class="absolute top-3 left-3 bg-yellow-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase animate-wiggle shadow-lg">Weekend Special</span>
+                    </div>
+                    <h3 class="text-lg font-black text-gray-900 dark:text-white group-hover:text-brandOrange transition">Crispy Chicken Bucket</h3>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">10 Pcs Fried Chicken + 2 Dips + Large Potato Wedges.</p>
                 </div>
                 <div class="flex justify-between items-center pt-3 border-t border-gray-200 dark:border-gray-800">
@@ -232,8 +241,8 @@
             <div class="menu-item sides shimmer-card hover-lift bg-white dark:bg-[#121212] p-3.5 rounded-2xl border border-gray-200 dark:border-gray-800/80 transition duration-300 flex flex-col justify-between group shadow-sm" data-aos="fade-up" data-aos-delay="300">
                 <div>
                     <div class="relative overflow-hidden rounded-xl mb-3">
-                        <img class="w-full h-32 object-contain p-2 group-hover:scale-110 transition duration-500" src="{{ asset('assets/crispy-french-fries.svg') }}" alt="Crispy French Fries">
-                        <button onclick="openQuickView('Crispy French Fries', '$2.49', 'Golden salted crispy french fries served with garlic mayo sauce.', '{{ asset('assets/crispy-french-fries.svg') }}', 2.49, 'SIDES')" class="absolute top-2 right-2 bg-black/60 hover:bg-brandOrange hover:text-black text-white w-7 h-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-md"><i class="fa-solid fa-eye text-xs"></i></button>
+                        <img class="w-full h-32 object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=400&q=80" alt="Crispy French Fries">
+                        <button onclick="openQuickView('Crispy French Fries', '$2.49', 'Golden salted crispy french fries served with garlic mayo sauce.', 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=400&q=80', 2.49, 'SIDES')" class="absolute top-2 right-2 bg-black/60 hover:bg-brandOrange hover:text-black text-white w-7 h-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-md"><i class="fa-solid fa-eye text-xs"></i></button>
                     </div>
                     <div class="text-[10px] text-brandOrange mb-1">★★★★☆ (4.6)</div>
                     <h3 class="font-bold text-xs text-gray-900 dark:text-white group-hover:text-brandOrange transition item-name">Crispy French Fries</h3>
@@ -375,7 +384,7 @@
                 <div class="text-brandOrange text-xs">★★★★★</div>
                 <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">"The Double Cheesy Pizza arrived piping hot in less than 25 minutes! Best wood-fired pizza in NY!"</p>
                 <div class="flex items-center gap-3 pt-2">
-                    <div class="w-8 h-8 bg-brandOrange text-black font-bold text-xs rounded-full flex items-center justify-center shadow-md">JD</div>
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80" alt="John Doe" class="w-10 h-10 rounded-full object-cover border-2 border-brandOrange shadow-md">
                     <div>
                         <h4 class="font-bold text-xs text-gray-900 dark:text-white">John Doe</h4>
                         <span class="text-[10px] text-gray-400">Verified Buyer</span>
@@ -387,7 +396,7 @@
                 <div class="text-brandOrange text-xs">★★★★★</div>
                 <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">"Spicy Zinger Burger is an absolute game-changer. Crispy on the outside, juicy on the inside!"</p>
                 <div class="flex items-center gap-3 pt-2">
-                    <div class="w-8 h-8 bg-brandRed text-white font-bold text-xs rounded-full flex items-center justify-center shadow-md">AS</div>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Amanda Smith" class="w-10 h-10 rounded-full object-cover border-2 border-brandRed shadow-md">
                     <div>
                         <h4 class="font-bold text-xs text-gray-900 dark:text-white">Amanda Smith</h4>
                         <span class="text-[10px] text-gray-400">Food Blogger</span>
@@ -399,11 +408,62 @@
                 <div class="text-brandOrange text-xs">★★★★★</div>
                 <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">"Their Choco Fudge Shake is heavenly. Super fast delivery and great packaging."</p>
                 <div class="flex items-center gap-3 pt-2">
-                    <div class="w-8 h-8 bg-amber-500 text-black font-bold text-xs rounded-full flex items-center justify-center shadow-md">MK</div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Michael K." class="w-10 h-10 rounded-full object-cover border-2 border-amber-500 shadow-md">
                     <div>
                         <h4 class="font-bold text-xs text-gray-900 dark:text-white">Michael K.</h4>
                         <span class="text-[10px] text-gray-400">Regular Customer</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Foodie Showcase Gallery -->
+    <section class="px-[5%] py-16">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4" data-aos="fade-up">
+            <div>
+                <span class="text-brandOrange font-bold text-xs uppercase tracking-widest bg-brandOrange/10 px-3 py-1 rounded-full">Social Feeds</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mt-2">FOLLOW US @QUICKBITE</h2>
+            </div>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-brandOrange hover:text-yellow-500 flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-instagram text-base"></i> View Instagram Profile &rarr;
+            </a>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="relative group overflow-hidden rounded-2xl shadow-sm h-40" data-aos="zoom-in" data-aos-delay="50">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Cheesy Pizza" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl shadow-sm h-40" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Juicy Burger" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl shadow-sm h-40" data-aos="zoom-in" data-aos-delay="150">
+                <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=400&q=80" alt="Crispy Fried Chicken" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl shadow-sm h-40" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=400&q=80" alt="Pepperoni Pizza" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl shadow-sm h-40" data-aos="zoom-in" data-aos-delay="250">
+                <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=400&q=80" alt="Golden French Fries" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl shadow-sm h-40" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=400&q=80" alt="Artisan Shakes" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xl">
+                    <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
         </div>

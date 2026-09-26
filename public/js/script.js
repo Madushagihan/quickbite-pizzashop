@@ -42,6 +42,25 @@ function toggleTheme() {
     }
 }
 
+// Food Item Image Mapping for Cart Thumbnails
+const itemImages = {
+    'Classic Beef Burger': 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=150&q=80',
+    'Double Cheesy Pizza': 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=150&q=80',
+    'Crispy Fried Wings': 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=150&q=80',
+    'Pepperoni Feast Pizza': 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=150&q=80',
+    'Spicy Zinger Burger': 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=150&q=80',
+    'Crispy French Fries': 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=150&q=80',
+    'Choco Fudge Shake': 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=150&q=80',
+    'Veggie Supreme Pizza': 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=150&q=80',
+    'Double BBQ Bacon Burger': 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=150&q=80',
+    'Crispy Chicken Tenders': 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=150&q=80',
+    'Hot Lava Cake': 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=150&q=80',
+    'Strawberry Glazed Donut': 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=150&q=80',
+    'Family Pizza Feast': 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=150&q=80',
+    'Burger Madness Box': 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=150&q=80',
+    'Crispy Chicken Bucket': 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=150&q=80',
+};
+
 // Cart Drawer & State
 let cart = [];
 
@@ -52,12 +71,13 @@ function toggleCart() {
     }
 }
 
-function addToCart(itemName, itemPrice, eventSource = null) {
+function addToCart(itemName, itemPrice, eventSource = null, itemImg = null) {
     const existing = cart.find(i => i.name === itemName);
+    const photoUrl = itemImg || itemImages[itemName] || 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=150&q=80';
     if (existing) {
         existing.quantity += 1;
     } else {
-        cart.push({ name: itemName, price: parseFloat(itemPrice), quantity: 1 });
+        cart.push({ name: itemName, price: parseFloat(itemPrice), quantity: 1, image: photoUrl });
     }
     saveCart();
     updateCartUI(true);
@@ -98,13 +118,17 @@ function updateCartUI(shouldBump = false) {
         cartContainer.innerHTML = cart.map(item => {
             totalCount += item.quantity;
             totalPrice += item.price * item.quantity;
+            const imgSrc = item.image || itemImages[item.name] || 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=150&q=80';
             return `
-                <div class="flex justify-between items-center bg-white dark:bg-[#181818] p-3 rounded-xl border border-gray-200 dark:border-gray-800 text-xs shadow-sm hover:border-brandOrange/40 transition">
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white">${item.name}</h4>
-                        <p class="text-gray-500 dark:text-gray-400 text-[10px]">$${item.price.toFixed(2)} x ${item.quantity}</p>
+                <div class="flex justify-between items-center bg-white dark:bg-[#181818] p-3 rounded-xl border border-gray-200 dark:border-gray-800 text-xs shadow-sm hover:border-brandOrange/40 transition gap-3">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <img src="${imgSrc}" alt="${item.name}" class="w-12 h-12 rounded-lg object-cover shrink-0 shadow-sm">
+                        <div class="truncate">
+                            <h4 class="font-bold text-gray-900 dark:text-white truncate">${item.name}</h4>
+                            <p class="text-gray-500 dark:text-gray-400 text-[10px]">$${item.price.toFixed(2)} x ${item.quantity}</p>
+                        </div>
                     </div>
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-3 shrink-0">
                         <span class="font-extrabold text-brandOrange">$${(item.price * item.quantity).toFixed(2)}</span>
                         <button onclick="removeFromCart('${item.name.replace(/'/g, "\\'")}')" class="text-red-500 hover:text-red-400 text-xs transition hover:scale-125 transform p-1" title="Remove"><i class="fa-solid fa-trash"></i></button>
                     </div>
